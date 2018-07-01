@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.charles.quizzapp.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.widget.RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fcfaf8f8">
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:padding="2dp"
+                android:textSize="20dp"
+                android:text="please answer these quetions"/>
+            </android.widget.LinearLayout>
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="define current"
+                android:padding="2dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+    android:id="@+id/pressure"
+    android:layout_width="wrap_content"
+    android:text="Electric pressure"
+    android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/spark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a spark"/>
+            <RadioButton
+                android:id="@+id/flow"
+                android:layout_width="wrap_content"
+                android:text="the flow of charges"
+                android:layout_height="wrap_content" />
+            </RadioGroup>
+        </android.widget.LinearLayout>
+        <android.widget.LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Kirchoffs current law"
+                android:padding="2dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/loop"
+                android:layout_width="wrap_content"
+                android:text="voltage in aclossed loop=0"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/junction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="current entering a juncion = current leaving junction "/>
+            <RadioButton
+                android:id="@+id/propotional"
+                android:layout_width="wrap_content"
+                android:text="current is directly proportional to voltage"
+                android:layout_height="wrap_content" />
+            </RadioGroup>
+            <android.widget.LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="what is voltage"
+                    android:padding="2dp"/>
+                <CheckBox
+                    android:id="@+id/VIR"
+                    android:layout_width="wrap_content"
+                    android:text="V=IR"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/v2i"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="V=2I"/>
+                <CheckBox
+                    android:id="@+id/v2r"
+                    android:layout_width="wrap_content"
+                    android:text="V=2R"
+                    android:layout_height="wrap_content" />
+            </android.widget.LinearLayout>
+            <android.widget.LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </android.widget.LinearLayout>
+            <android.widget.LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="what is resistance"
+                    android:padding="2dp"/>
+                <CheckBox
+                    android:id="@+id/volts"
+                    android:layout_width="wrap_content"
+                    android:text="voltage"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/flowof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="flow of charge"/>
+                <CheckBox
+                    android:id="@+id/resistance"
+                    android:layout_width="wrap_content"
+                    android:text="resistance to flow of charge"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/rvi"
+                    android:layout_width="wrap_content"
+                    android:text="R=V/I"
+                    android:layout_height="wrap_content" />
+            </android.widget.LinearLayout>
+            <android.widget.LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="which of these best describes power"
+                    android:padding="2dp"/>
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/pvr"
+                    android:layout_width="wrap_content"
+                    android:text="p=VR"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/pvi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P=VI"/>
+                <RadioButton
+                    android:id="@+id/pir"
+                    android:layout_width="wrap_content"
+                    android:text="P=IR"
+                    android:layout_height="wrap_content" />
+                </RadioGroup>
+            </android.widget.LinearLayout>
+            <android.widget.LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="state faradays law"
+                    android:padding="2dp"/>
+                <CheckBox
+                    android:id="@+id/voltages"
+                    android:layout_width="wrap_content"
+                    android:text="all voltages in a junction are equal"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/directly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="current is directly proportional to voltage"/>
+                <CheckBox
+                    android:id="@+id/magnetic"
+                    android:layout_width="wrap_content"
+                    android:text="when a magnetic force linking a conductor changes emf is induced"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/emf"
+                    android:layout_width="wrap_content"
+                    android:text="Emf is given by rate of change of magnetic flux"
+                    android:layout_height="wrap_content" />
+            </android.widget.LinearLayout>
+</android.widget.LinearLayout>
+        </android.widget.LinearLayout>
+        <Button
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="check score"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+    </android.widget.RelativeLayout>
+</android.widget.ScrollView>
